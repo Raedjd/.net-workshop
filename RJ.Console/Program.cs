@@ -30,7 +30,7 @@ namespace RJ.Console
             produit2.GetMyType();
             ch.GetMyType();
             bi.GetMyType();
-
+             
 
             System.Console.ReadKey();
         }
