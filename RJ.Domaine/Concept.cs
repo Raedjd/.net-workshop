@@ -8,7 +8,7 @@ namespace RJ.Domaine
 {
     public abstract class Concept
     {
-        public abstract void GetDetails();
+        public abstract void getDetails();
     }
 }
   

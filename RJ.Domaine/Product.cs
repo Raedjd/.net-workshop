@@ -22,6 +22,16 @@ namespace RJ.Domaine
         {
             this.providers = new List<Provider>();
         }
+
+        public void getDetails()
+        {
+            Console.WriteLine($"{Quantity} {Name} {Price}" + $"{ProductId} {Description} {DateProd}");
+        }
+
+        public virtual void GetMyType()
+        {
+            Console.WriteLine("I'am a product");
+        }
     }
 }
  

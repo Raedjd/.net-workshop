@@ -17,6 +17,29 @@ namespace RJ.Domaine
         public bool IsApproved { get; set; }
         public List<Product> products { get; set; }
 
+
+        private string pass;
+        private string confPass;
+        public string Password { 
+            get { return pass; }
+            set { if (value.Length < 5 || value.Length > 20)
+                    Console.WriteLine("///////ERROR///////");
+                else
+                    pass = value;
+                Console.WriteLine("///////SUCCES///////");
+            } }
+        public string ConfPass{ get { return confPass; }
+            set { if (pass.Equals(value))
+                {
+                    confPass = value;
+                    Console.WriteLine("pass==confPass");
+                }
+              else
+                    Console.WriteLine("/////ERROR////////");
+                        } 
+        }
+
+
         public Provider()
         {
             this.products = new List<Product>();
@@ -32,6 +55,44 @@ namespace RJ.Domaine
             this.DateCreated = dateCreated;
             this.IsApproved = isApproved;
             this.products = new List<Product>();
+        }
+
+        public void getDetails()
+        {
+            Console.WriteLine($"{Id} {UserName} {Email}");
+        }
+
+        public static void SetIsApproved(Provider p)
+        {
+            if (p.Pwd == p.ConfPwd)
+                p.IsApproved = true;
+            else
+                p.IsApproved = false;
+        }
+
+        public static void SetIsApproved(string password, string confirmPassword,ref bool IsApproved) {
+
+            if (password == confirmPassword)
+                IsApproved = true;
+            else
+                IsApproved = false;
+        }
+        /*
+        public bool Login(string username,string pwd)
+        {
+            return (username.Equals(UserName) && pwd.Equals(Pwd));
+        }
+
+        public bool Login(string username, string pwd,string email)
+        {
+            return (username.Equals(UserName) && pwd.Equals(Pwd) && email.Equals(Email));
+        }
+        */
+        public bool Login(string username, string pwd, string email=null)
+        {     if(email !=null)
+            return (username.Equals(UserName) && pwd.Equals(Pwd) && email.Equals(Email));
+              else
+                return (username.Equals(UserName) && pwd.Equals(Pwd) && email.Equals(Email));
         }
     }
 }
