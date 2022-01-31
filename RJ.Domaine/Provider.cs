@@ -95,4 +95,4 @@ namespace RJ.Domaine
                 return (username.Equals(UserName) && pwd.Equals(Pwd) && email.Equals(Email));
         }
     }
-}
+} 

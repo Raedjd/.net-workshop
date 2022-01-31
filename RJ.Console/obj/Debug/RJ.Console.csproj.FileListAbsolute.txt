@@ -1,0 +1,10 @@
+C:\Users\msi\source\repos\ProductStore\RJ.Console\bin\Debug\RJ.Console.exe.config
+C:\Users\msi\source\repos\ProductStore\RJ.Console\bin\Debug\RJ.Console.exe
+C:\Users\msi\source\repos\ProductStore\RJ.Console\bin\Debug\RJ.Console.pdb
+C:\Users\msi\source\repos\ProductStore\RJ.Console\bin\Debug\RJ.Domaine.dll
+C:\Users\msi\source\repos\ProductStore\RJ.Console\bin\Debug\RJ.Domaine.pdb
+C:\Users\msi\source\repos\ProductStore\RJ.Console\obj\Debug\RJ.Console.csproj.AssemblyReference.cache
+C:\Users\msi\source\repos\ProductStore\RJ.Console\obj\Debug\RJ.Console.csproj.CoreCompileInputs.cache
+C:\Users\msi\source\repos\ProductStore\RJ.Console\obj\Debug\RJ.Console.csproj.CopyComplete
+C:\Users\msi\source\repos\ProductStore\RJ.Console\obj\Debug\RJ.Console.exe
+C:\Users\msi\source\repos\ProductStore\RJ.Console\obj\Debug\RJ.Console.pdb

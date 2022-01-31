@@ -49,5 +49,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RJ.Domaine\RJ.Domaine.csproj">
+      <Project>{8f6467fe-5f57-402a-a54f-f1499ba77f01}</Project>
+      <Name>RJ.Domaine</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
