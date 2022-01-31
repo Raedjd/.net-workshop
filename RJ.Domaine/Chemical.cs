@@ -13,3 +13,4 @@ namespace RJ.Domaine
         public string StreetAddress { get; set; }
     }
 }
+ 
