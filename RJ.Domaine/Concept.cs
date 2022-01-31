@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace RJ.Domaine
 {
-    public class Class1
+    public abstract class Concept
     {
+        public abstract void GetDetails();
     }
 }

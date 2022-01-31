@@ -1,0 +1,6 @@
+C:\Users\msi\source\repos\ProductStore\RJ.Domaine\bin\Debug\RJ.Domaine.dll
+C:\Users\msi\source\repos\ProductStore\RJ.Domaine\bin\Debug\RJ.Domaine.pdb
+C:\Users\msi\source\repos\ProductStore\RJ.Domaine\obj\Debug\RJ.Domaine.csproj.AssemblyReference.cache
+C:\Users\msi\source\repos\ProductStore\RJ.Domaine\obj\Debug\RJ.Domaine.csproj.CoreCompileInputs.cache
+C:\Users\msi\source\repos\ProductStore\RJ.Domaine\obj\Debug\RJ.Domaine.dll
+C:\Users\msi\source\repos\ProductStore\RJ.Domaine\obj\Debug\RJ.Domaine.pdb
