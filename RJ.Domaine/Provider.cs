@@ -21,5 +21,17 @@ namespace RJ.Domaine
         {
             this.products = new List<Product>();
         }
+
+        public Provider(int id,string userName,string email,string pwd,string confPwd,DateTime dateCreated,bool isApproved)
+        {
+            this.Id = id;
+            this.UserName = userName;
+            this.Email = email;
+            this.Pwd = pwd;
+            this.ConfPwd = confPwd;
+            this.DateCreated = dateCreated;
+            this.IsApproved = isApproved;
+            this.products = new List<Product>();
+        }
     }
 }
