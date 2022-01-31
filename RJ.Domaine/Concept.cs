@@ -11,4 +11,4 @@ namespace RJ.Domaine
         public abstract void GetDetails();
     }
 }
- 
+  
