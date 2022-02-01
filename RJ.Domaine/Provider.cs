@@ -60,6 +60,11 @@ namespace RJ.Domaine
         public void getDetails()
         {
             Console.WriteLine($"{Id} {UserName} {Email}");
+
+            foreach(Product p in products)
+            {
+                p.getDetails();
+            }
         }
 
         public static void SetIsApproved(Provider p)
@@ -93,6 +98,22 @@ namespace RJ.Domaine
             return (username.Equals(UserName) && pwd.Equals(Pwd) && email.Equals(Email));
               else
                 return (username.Equals(UserName) && pwd.Equals(Pwd) && email.Equals(Email));
+        }
+
+        public void GetProducts(string filterType, string filterValue)
+        {
+            if (filterType.Equals("DateProd"))
+            {
+                foreach(Product p in products)
+                {
+                 
+                   // DateTime date = DateTime.Parse(filterValue.ToString("yyyy-MM-dd"));
+                  //  if (p.DateProd==date)
+                   // {
+                     //   p.getDetails();
+                   // }
+                }
+            }
         }
     }
 } 

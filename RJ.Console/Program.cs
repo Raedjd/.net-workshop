@@ -23,14 +23,17 @@ namespace RJ.Console
             Provider provider = new Provider() { Pwd = "raed12", ConfPwd = "raed12", UserName="raedjaidi",Email="raed.jaidi@esprit.tn" };
             System.Console.WriteLine(provider.Login("raedjaidi", "raed12", "raed.jaidi@esprit.tn"));
             //System.Console.WriteLine(provider.Login("raedjaidi", "raed12"));
-            System.Console.WriteLine("///////////////////////////////////////////////////////////////:");
+            System.Console.WriteLine("///////////////////////////////////////////////////////////////");
             Product produit2 = new Product();
             Product ch = new Chemical();
             Product bi = new Biological();
             produit2.GetMyType();
             ch.GetMyType();
             bi.GetMyType();
-             
+            System.Console.WriteLine("///////////////////////////////////////////////////////////////");
+
+            provider.products.Add(product);
+            provider.getDetails();
 
             System.Console.ReadKey();
         }
