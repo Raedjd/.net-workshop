@@ -37,5 +37,5 @@ namespace RJ.Console
 
             System.Console.ReadKey();
         }
-    }
+    } 
 }
