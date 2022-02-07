@@ -108,14 +108,14 @@ namespace RJ.Domaine
                
                 switch (filterType.ToUpper())
                 {
-                    case "DESCRIPTION":
+                    case "Description":
                         if (filterValue == product.Description) products.Add(product);
                         break;
-                    case "DATEPROD":
+                    case "DateProduct":
                         DateTime.TryParse(filterValue, out var dateTime);
                         if (dateTime == product.DateProd) products.Add(product);
                         break;
-                    case "PRICE":
+                    case "Price":
                         Double.TryParse(filterValue, out var price);
                         if (price == product.Price) products.Add(product);
                         break;
