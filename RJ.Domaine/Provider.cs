@@ -15,7 +15,7 @@ namespace RJ.Domaine
         public string ConfPwd { get; set; }
         public DateTime DateCreated { get; set; }
         public bool IsApproved { get; set; }
-        public List<Product> products { get; set; }
+        public IList<Product> products { get; set; }
 
 
         private string pass;
@@ -102,18 +102,31 @@ namespace RJ.Domaine
 
         public void GetProducts(string filterType, string filterValue)
         {
-            if (filterType.Equals("DateProd"))
+            IList<Product> products = new List<Product>();
+            foreach (var product in products)
             {
-                foreach(Product p in products)
+               
+                switch (filterType.ToUpper())
                 {
-                 
-                   // DateTime date = DateTime.Parse(filterValue.ToString("yyyy-MM-dd"));
-                  //  if (p.DateProd==date)
-                   // {
-                     //   p.getDetails();
-                   // }
+                    case "DESCRIPTION":
+                        if (filterValue == product.Description) products.Add(product);
+                        break;
+                    case "DATEPROD":
+                        DateTime.TryParse(filterValue, out var dateTime);
+                        if (dateTime == product.DateProd) products.Add(product);
+                        break;
+                    case "PRICE":
+                        Double.TryParse(filterValue, out var price);
+                        if (price == product.Price) products.Add(product);
+                        break;
+                    default:
+                        Console.WriteLine("Value not found!");
+                        break;
+
                 }
             }
+
+            Console.WriteLine(products);
         }
     }
 } 

@@ -16,7 +16,7 @@ namespace RJ.Domaine
         public double Price { get; set; }
         public int Quantity { get; set; }
         public Category category { get; set; }
-        public List<Provider> providers { get; set; }
+        public IList<Provider> providers { get; set; }
 
         public Product()
         {
