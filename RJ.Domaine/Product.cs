@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RJ.Domaine
 {
-    public class Product
+    public class Product : Concept
     {
         //Attribute & Getters et Setters
         public int ProductId { get; set; }
@@ -23,7 +23,7 @@ namespace RJ.Domaine
             this.providers = new List<Provider>();
         }
 
-        public void getDetails()
+        public override void getDetails()
         {
             Console.WriteLine($"{Quantity} {Name} {Price}" + $"{ProductId} {Description} {DateProd}");
         }

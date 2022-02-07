@@ -34,8 +34,42 @@ namespace RJ.Console
 
             provider.products.Add(product);
             provider.getDetails();
+            System.Console.WriteLine("///////////////////////////////////////////////////////////////");
 
-            System.Console.ReadKey();
+            IList<Product> products = new List<Product>()
+            {
+                new Product()
+                {
+                    Description = "lait",
+                    Price = 2,
+                    DateProd = new DateTime(2021, 02, 07),
+                    Quantity = 12
+
+                },
+            };
+
+            System.Console.WriteLine("///////////////////////////////////////////////////////////////");
+
+            provider.Find = delegate (Product Product)
+            {
+                System.Console.WriteLine(Product.Description);
+                return null;
+            };
+
+             System.Console.ReadKey();
+
+        
         }
+        //public IList<Product> FindUser(Product product)
+        //{
+          //  System.Console.WriteLine("");
+           // return null;
+       // }
     } 
 }
+  //notions de tableau
+  //int [] tab = new int [10]; 
+  // [,] tab= new [2,3];
+  // int [] [] tab new [3][];
+
+   

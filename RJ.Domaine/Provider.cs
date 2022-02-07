@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace RJ.Domaine
 {
-    public class Provider
+    public delegate IList<Product> Find(Product product);      //Delegate: pointeur fonction
+    public class Provider : Concept
     {
         public int Id { get; set; }
         public string UserName { get; set; }
@@ -17,6 +18,7 @@ namespace RJ.Domaine
         public bool IsApproved { get; set; }
         public IList<Product> products { get; set; }
 
+        public Find Find{ get; set; }
 
         private string pass;
         private string confPass;
@@ -57,7 +59,7 @@ namespace RJ.Domaine
             this.products = new List<Product>();
         }
 
-        public void getDetails()
+        public override void getDetails()
         {
             Console.WriteLine($"{Id} {UserName} {Email}");
 
