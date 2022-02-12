@@ -2,7 +2,7 @@
 - Nous avons vu les notions de la framework .net et créer un projet avec l'application console. 
 ### Semaine2
 - On ajout sur le projet la bibliothéque de classes
-Nous avons vu la programmation orienté objet: 
+- On la programmation orienté objet
 - les classes et les objets
 - l'encapsulation
 - l'héritage
