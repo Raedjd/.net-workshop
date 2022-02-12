@@ -15,7 +15,7 @@ Nous avons vu :
 - fonctions anonymes
 - les classes abstract et les méthodes virtuels
 - delegate(pointeur fonction)
-- IList/INumerable
+- IList/IEnumerable
 - différence entre les tableaux et les collections
 
 
