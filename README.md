@@ -1,4 +1,4 @@
-###Semaine1
+### Hi I'm Raed 👋  
 
-Nous avons vu les notions de framework .net  et créer un projet sur le IDE visual studio 2019
+I'm Raed Jaidi a Full Stack Web Developer.
 
