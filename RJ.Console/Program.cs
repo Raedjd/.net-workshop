@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using RJ.Domaine;
-namespace RJ.Console
+using RJ.Service;
+namespace RJ.Console;
 {
     class Program
     {
@@ -56,15 +54,44 @@ namespace RJ.Console
                 return null;
             };
 
-             System.Console.ReadKey();
+            System.Console.WriteLine("/////////////////////////////////TP2 SEMAINE4////////////////////////////");
+
+             ProductManage productManage = new ProductManage(products);
+              productManage.FindProduct("r");
+              productManage.ScanProduct();
+        System.Console.ReadKey();
 
         
         }
         //public IList<Product> FindUser(Product product)
         //{
-          //  System.Console.WriteLine("");
-           // return null;
-       // }
+        //  System.Console.WriteLine("");
+        // return null;
+        // }
+        IList<Product> myProducts;
+        public IList<Product> FindProduct(string r)
+        {
+            IList<Product> listProducts = new List<Product>();
+            foreach (Product item in myProducts)
+            {
+                if (item.Name.StartsWith(r)) listProducts.Add(item);
+            }
+            return listProducts;
+        }
+
+        public void ScanProduct(Category myCategory)
+        {
+            // IList<Product> listProducts = new List<Product>();
+            foreach (Product item in myProducts)
+            {
+                if (item.category.Equals(myCategory))
+                {
+                    item.getDetails();
+                }
+
+            }
+
+        }
     } 
 }
   //notions de tableau

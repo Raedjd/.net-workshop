@@ -54,6 +54,13 @@
       <Project>{8f6467fe-5f57-402a-a54f-f1499ba77f01}</Project>
       <Name>RJ.Domaine</Name>
     </ProjectReference>
+    <ProjectReference Include="..\RJ.Service\RJ.Service.csproj">
+      <Project>{6ca2e6c1-1f1f-432d-803c-4dcb764d27c2}</Project>
+      <Name>RJ.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
