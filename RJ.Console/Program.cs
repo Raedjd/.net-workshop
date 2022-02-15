@@ -57,9 +57,56 @@ namespace RJ.Console;
             System.Console.WriteLine("/////////////////////////////////TP2 SEMAINE4////////////////////////////");
 
              ProductManage productManage = new ProductManage(products);
-              productManage.FindProduct("r");
-              productManage.ScanProduct();
-        System.Console.ReadKey();
+                //Méthode anonyme de findProduct
+                productManage.FindProduct("r", delegate (string r)){ 
+                  IList<Product> listProducts = new List<Product>();
+                foreach (Product item in myProducts)
+                {
+                if (item.Name.StartsWith(r)) listProducts.Add(item);
+                }
+                return listProducts;
+                };
+
+              //Méthode anonyme de scanProduct
+               productManage.ScanProduct(pc, delegate (Category myCategory)){
+               // IList<Product> listProducts = new List<Product>();
+                foreach (Product item in myProducts)
+              {
+                if (item.category.Equals(myCategory))
+                {
+                    item.getDetails();
+                }
+
+                }
+                };
+
+              //Expression lambda de findProduct
+            productManage.FindProduct("r", delegate (string r))=>
+            IList<Product> listProducts = new List<Product>();
+            foreach (Product item in myProducts)
+            {
+                if (item.Name.StartsWith(r)) listProducts.Add(item);
+            }
+            return listProducts;
+            };
+
+                //Expression lambda de scanProduct
+               productManage.ScanProduct(pc, delegate (Category myCategory))=>
+               // IList<Product> listProducts = new List<Product>();
+                foreach (Product item in myProducts)
+                {
+                if (item.category.Equals(myCategory))
+                {
+                    item.getDetails();
+                }
+
+                }
+                };
+
+             //Methode d'extension
+             productManage.UpperName(produit2);
+
+            System.Console.ReadKey();
 
         
         }
@@ -68,7 +115,8 @@ namespace RJ.Console;
         //  System.Console.WriteLine("");
         // return null;
         // }
-        IList<Product> myProducts;
+      
+       /*  IList<Product> myProducts;
         public IList<Product> FindProduct(string r)
         {
             IList<Product> listProducts = new List<Product>();
@@ -91,7 +139,7 @@ namespace RJ.Console;
 
             }
 
-        }
+        } */
     } 
 }
   //notions de tableau

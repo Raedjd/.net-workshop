@@ -12,5 +12,12 @@ namespace RJ.Service
         public FindProduct FindProduct { get; set; }
         public ScanProduct ScanProduct { get; set; }
 
+        List<Product> myProducts;
+
+        public ProductManage(List<Product> myProducts)
+        {
+            this.myProducts = myProducts;
+        }
+
     }
 }
