@@ -22,10 +22,11 @@ Nous avons vu :
 Nous avons vu : 
 - les méthodes anonymes
 - les expressions lambda
-- les méthodes d’extension ------>Création d'une classe statique
-                           ------>Définir des méthodes statique comme des méthodes d’extensions
-                           ------>Spécifier dans le premier paramètre de ces méthodes le type qui sera étendu par la méthode d’extension.
-                           ------>Précéder le type du premier paramètre par le modificateur this.
+- les méthodes d’extension 
+------->Création d'une classe statique
+------>Définir des méthodes statique comme des méthodes d’extensions
+------>Spécifier dans le premier paramètre de ces méthodes le type qui sera étendu par la méthode d’extension.
+------>Précéder le type du premier paramètre par le modificateur this.
 
 
               
