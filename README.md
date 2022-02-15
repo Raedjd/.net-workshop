@@ -19,7 +19,6 @@ Nous avons vu :
 - différence entre les tableaux et les collections
 ### Semaine4
 - On ajout sur le projet la bibliothéque de classe service
-Nous avons vu : 
 - les méthodes anonymes
 - les expressions lambda
 - les méthodes d’extension: 
