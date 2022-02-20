@@ -1,7 +1,7 @@
 ### Semaine1
 - Nous avons vu les notions de la framework .net et créer un projet avec l'application console. 
 ### Semaine2
-- On ajout sur le projet la bibliothéque de classes domaine
+- Nous avons ajouté sur le projet la bibliothéque de classes domaine
 - la programmation orienté objet
 - les classes et les objets
 - l'encapsulation
@@ -18,7 +18,7 @@ Nous avons vu :
 - IList/IEnumerable
 - différence entre les tableaux et les collections
 ### Semaine4
-- On ajout sur le projet la bibliothéque de classe service
+- Nous avons ajouté sur le projet la bibliothéque de classe service
 - les méthodes anonymes
 - les expressions lambda
 - les méthodes d’extension: 
