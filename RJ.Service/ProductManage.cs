@@ -6,7 +6,7 @@ namespace RJ.Service
 {
     public delegate IList<Product> FindProduct(string r);
     public delegate void ScanProduct(Category myCategory);
-    class ProductManage
+   public class ProductManage
     {
 
         public FindProduct FindProduct { get; set; }

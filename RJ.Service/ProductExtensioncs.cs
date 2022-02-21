@@ -7,7 +7,7 @@ namespace RJ.Service
 {
     public static class ProductExtensioncs
     {
-        public static void UpperName(/*this ProductManage productMange,*/  Product product) {
+        public static void UpperName(this ProductManage productMange,  Product product) {
 
             product.Name.ToLower();
         }

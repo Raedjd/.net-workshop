@@ -4,7 +4,7 @@ using System.Text;
 using RJ.Domaine;
 namespace RJ.Service
 {
-    class CategorieManage
+   public class CategorieManage
     {
         List<Category> myCategories;
         public CategorieManage(List<Category> categorie) { this.myCategories = categorie; }
