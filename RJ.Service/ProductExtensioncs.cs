@@ -12,7 +12,7 @@ namespace RJ.Service
             product.Name.ToLower();
         }
 
-        public static bool InCategory(Category category) {
+        public static bool InCategory(this CategorieManage categorieManage,Category category) {
             IList<Product> listProducts = new List<Product>();
             foreach (Product item in listProducts)
             {
