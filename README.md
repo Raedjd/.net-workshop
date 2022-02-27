@@ -27,7 +27,10 @@ Définir des méthodes statique comme des méthodes d’extensions/
 Spécifier dans le premier paramètre de ces méthodes le type qui sera étendu par la méthode d’extension/
 Précéder le type du premier paramètre par le modificateur this.
 
-
+### Semaine5
+- Nous avons vu la language Link (Language-INtegrated Query):-->Spécifier une source de données-->Définir une requête-->Exécuter la requête
+- La syntaxe de requête est:parcourt la collection d’objet data, objet par objet/définit la condition de sélection/précise ce que l’on veut sélectionner
+- Nous avons vu Méthodes de sélection (select),Méthodes d’agrégation(Average, Count, Max),Méthodes de tri(OrderBy) et Méthodes de regroupement(GroupBy).
               
               
 
