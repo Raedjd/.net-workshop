@@ -1,0 +1,13 @@
+C:\Users\msi\source\repos\ProductStore\RJ.Service\bin\Debug\netcoreapp3.1\RJ.Service.deps.json
+C:\Users\msi\source\repos\ProductStore\RJ.Service\bin\Debug\netcoreapp3.1\RJ.Service.dll
+C:\Users\msi\source\repos\ProductStore\RJ.Service\bin\Debug\netcoreapp3.1\RJ.Service.pdb
+C:\Users\msi\source\repos\ProductStore\RJ.Service\bin\Debug\netcoreapp3.1\RJ.Domaine.dll
+C:\Users\msi\source\repos\ProductStore\RJ.Service\bin\Debug\netcoreapp3.1\RJ.Domaine.pdb
+C:\Users\msi\source\repos\ProductStore\RJ.Service\obj\Debug\netcoreapp3.1\RJ.Service.csproj.AssemblyReference.cache
+C:\Users\msi\source\repos\ProductStore\RJ.Service\obj\Debug\netcoreapp3.1\RJ.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\msi\source\repos\ProductStore\RJ.Service\obj\Debug\netcoreapp3.1\RJ.Service.AssemblyInfoInputs.cache
+C:\Users\msi\source\repos\ProductStore\RJ.Service\obj\Debug\netcoreapp3.1\RJ.Service.AssemblyInfo.cs
+C:\Users\msi\source\repos\ProductStore\RJ.Service\obj\Debug\netcoreapp3.1\RJ.Service.csproj.CoreCompileInputs.cache
+C:\Users\msi\source\repos\ProductStore\RJ.Service\obj\Debug\netcoreapp3.1\RJ.Service.csproj.CopyComplete
+C:\Users\msi\source\repos\ProductStore\RJ.Service\obj\Debug\netcoreapp3.1\RJ.Service.dll
+C:\Users\msi\source\repos\ProductStore\RJ.Service\obj\Debug\netcoreapp3.1\RJ.Service.pdb

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using RJ.Domaine;
 using RJ.Service;
+using RJ.Data;
 namespace RJ.Console;
 {
     class Program
@@ -22,7 +23,9 @@ namespace RJ.Console;
             System.Console.WriteLine(provider.Login("raedjaidi", "raed12", "raed.jaidi@esprit.tn"));
             //System.Console.WriteLine(provider.Login("raedjaidi", "raed12"));
             System.Console.WriteLine("///////////////////////////////////////////////////////////////");
-            Product produit2 = new Product();
+        Product produit2 = new Product() {
+            Name = "delice";
+            };
             Product ch = new Chemical();
             Product bi = new Biological();
             produit2.GetMyType();
@@ -106,6 +109,8 @@ namespace RJ.Console;
              //Methode d'extension
              productManage.UpperName(produit2);
 
+               /////////////////////semaine5_seance2////////////////////
+               RJContext rjContext = new RJContext();
             System.Console.ReadKey();
 
         

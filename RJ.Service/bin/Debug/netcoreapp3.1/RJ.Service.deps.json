@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "RJ.Service/1.0.0": {
+        "dependencies": {
+          "RJ.Domaine": "1.0.0"
+        },
+        "runtime": {
+          "RJ.Service.dll": {}
+        }
+      },
+      "RJ.Domaine/1.0.0": {
+        "runtime": {
+          "RJ.Domaine.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RJ.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RJ.Domaine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
