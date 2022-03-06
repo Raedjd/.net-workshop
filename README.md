@@ -37,15 +37,15 @@ Précéder le type du premier paramètre par le modificateur this.
  - Créer une classe PSContext dans le projet PS.Data
  - Ajouter l’héritage de DbContext
  - Créer le constructeur par défaut de la classe PSContext
+ - Redéfinir la méthode OnConfiguring
+ - Ajouter la chaîne de connexion
+ - Installer EntityFrameworkCore.SqlServer
+ - Ajouter les DBSet de toutes les entités
+ - Ajouter la propriété public string Image { get; set; } à l’entité Product
+ - les annotations : [Required] ,[Key],[foregnkey],[maxlength],[minlength],[DispalayName],[Range],[Stringlength],[EmailAdress],[compare],[NotMapped],[DataType]...
 
- -Créer le constructeur par défaut de la classe PSContext
- -Redéfinir la méthode OnConfiguring
- -Ajouter la chaîne de connexion
- -Installer EntityFrameworkCore.SqlServer
- -Ajouter les DBSet de toutes les entités
- -Ajouter la propriété public string Image { get; set; } à l’entité Product
- -les annotations : [Required] ,[Key],[foregnkey],[maxlength],[minlength],[DispalayName],[Range],[Stringlength],[EmailAdress],[compare],[NotMapped],[DataType]...
  
+
               
               
 
