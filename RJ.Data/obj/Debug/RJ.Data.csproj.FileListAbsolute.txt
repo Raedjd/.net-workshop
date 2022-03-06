@@ -12,3 +12,5 @@ C:\Users\msi\source\repos\ProductStore\RJ.Data\obj\Debug\RJ.Data.csproj.CoreComp
 C:\Users\msi\source\repos\ProductStore\RJ.Data\obj\Debug\RJ.Data.csproj.CopyComplete
 C:\Users\msi\source\repos\ProductStore\RJ.Data\obj\Debug\RJ.Data.dll
 C:\Users\msi\source\repos\ProductStore\RJ.Data\obj\Debug\RJ.Data.pdb
+C:\Users\msi\source\repos\ProductStore\RJ.Data\obj\Debug\RJ.Data.Migrations.TP_ANNOTAIONS.resources
+C:\Users\msi\source\repos\ProductStore\RJ.Data\obj\Debug\RJ.Data.csproj.GenerateResource.cache

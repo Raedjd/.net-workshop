@@ -110,7 +110,7 @@ namespace RJ.Console;
              productManage.UpperName(produit2);
 
                /////////////////////semaine5_seance2////////////////////
-               RJContext rjContext = new RJContext();
+                
             System.Console.ReadKey();
 
         

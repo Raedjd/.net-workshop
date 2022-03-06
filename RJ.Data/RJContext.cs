@@ -12,12 +12,15 @@ namespace RJ.Data
     /// </summary>
    public class RJContext: DbContext
     {
-        public RJContext(): base("name=DB")
-        {
+        DbSet<Product> Products { get; set; }
+        DbSet<Provider> Providers { get; set; }
+        DbSet<Chemical> Chemicals { get; set; }
+        DbSet<Biological> Biologicals { get; set; }
+        DbSet<Category> Categories { get; set; }
 
+        internal void add(Category cat)
+        {
+            throw new NotImplementedException();
         }
-        public  DbSet<Product> Products { get; set; }
-        public  DbSet<Provider> Providers { get; set; }
-        public   DbSet<Category> Categories { get; set; }
     }
 }

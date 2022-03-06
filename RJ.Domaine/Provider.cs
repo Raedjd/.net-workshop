@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,10 +11,14 @@ namespace RJ.Domaine
     public delegate IList<Product> Find(Product product);      //Delegate: pointeur fonction
     public class Provider : Concept
     {
+        [Key]
         public int Id { get; set; }
         public string UserName { get; set; }
+        [EmailAddress, Required]
         public string Email { get; set; }
+        [DataType(DataType.Password), Required, MinLength(8)]
         public string Pwd { get; set; }
+        [Required, Compare("Password"),DataType(DataType.Password), NotMapped]
         public string ConfPwd { get; set; }
         public DateTime DateCreated { get; set; }
         public bool IsApproved { get; set; }
