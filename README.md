@@ -35,7 +35,9 @@ Précéder le type du premier paramètre par le modificateur this.
  - Nous avons ajouté sur le projet la bibliothéque de classe data.
  - Installer Entity Framework Core.
  - Créer une classe PSContext dans le projet PS.Data
- -Ajouter l’héritage de DbContext
+ - Ajouter l’héritage de DbContext
+ - Créer le constructeur par défaut de la classe PSContext
+
  -Créer le constructeur par défaut de la classe PSContext
  -Redéfinir la méthode OnConfiguring
  -Ajouter la chaîne de connexion
