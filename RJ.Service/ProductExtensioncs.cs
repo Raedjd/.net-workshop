@@ -16,7 +16,7 @@ namespace RJ.Service
             IList<Product> listProducts = new List<Product>();
             foreach (Product item in listProducts)
             {
-                if (item.category.Equals(category))
+                if (item.CategoryId.Equals(category))
                 {
                     return true;
                 }

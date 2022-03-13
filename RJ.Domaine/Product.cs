@@ -10,6 +10,9 @@ namespace RJ.Domaine
 {
     public class Product : Concept
     {
+        public readonly object CategoryId;
+        public Category categoryRef;
+
         //Attribute & Getters et Setters
         public int ProductId { get; set; }
         [Required(ErrorMessage = "Name is required")]
@@ -24,8 +27,8 @@ namespace RJ.Domaine
         public double Price { get; set; }
         [Range(0, int.MaxValue)]
         public int Quantity { get; set; }
-       // [ForeignKey("CategoryFK")]
-        public Category category { get; set; }
+        //[ForeignKey("CategoryFK")]
+        public Category Category { get; set; }
 
         //------------------------------------seance6---------------------------------//
         public  string Image { get; set; }

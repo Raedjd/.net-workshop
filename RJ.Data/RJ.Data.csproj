@@ -53,9 +53,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Configuration\AddresseConfiguration.cs" />
+    <Compile Include="Configuration\CategoryConfiguration.cs" />
+    <Compile Include="Configuration\ChemicalConfiguration.cs" />
+    <Compile Include="Configuration\ProductConfiguration.cs" />
+    <Compile Include="Configuration\ProviderConfiguration.cs" />
     <Compile Include="Migrations\202203061946525_TP_ANNOTAIONS.cs" />
     <Compile Include="Migrations\202203061946525_TP_ANNOTAIONS.designer.cs">
       <DependentUpon>202203061946525_TP_ANNOTAIONS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203131316097_CatProdChmConfig.cs" />
+    <Compile Include="Migrations\202203131316097_CatProdChmConfig.designer.cs">
+      <DependentUpon>202203131316097_CatProdChmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203131542418_adrProp.cs" />
+    <Compile Include="Migrations\202203131542418_adrProp.designer.cs">
+      <DependentUpon>202203131542418_adrProp.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -75,7 +88,14 @@
     <EmbeddedResource Include="Migrations\202203061946525_TP_ANNOTAIONS.resx">
       <DependentUpon>202203061946525_TP_ANNOTAIONS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203131316097_CatProdChmConfig.resx">
+      <DependentUpon>202203131316097_CatProdChmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203131542418_adrProp.resx">
+      <DependentUpon>202203131542418_adrProp.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

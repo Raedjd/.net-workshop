@@ -4,6 +4,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using RJ.Data.Configuration;
 using RJ.Domaine;
 namespace RJ.Data
 {  
@@ -18,9 +19,27 @@ namespace RJ.Data
         DbSet<Biological> Biologicals { get; set; }
         DbSet<Category> Categories { get; set; }
 
-        internal void add(Category cat)
+          internal void add(Category cat)
+          {
+              throw new NotImplementedException();
+          }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            throw new NotImplementedException();
+            //  base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Configurations.Add(new CategoryConfiguration());
+            modelBuilder.Configurations.Add(new ProductConfiguration());
+            modelBuilder.Configurations.Add(new ChemicalConfiguration());
+            modelBuilder.Configurations.Add(new ProviderConfiguration());
+            modelBuilder.Configurations.Add(new AddresseConfiguration());
+            //modelBuilder.Entity<Product>().ToTable("Product");
+            //modelBuilder.Entity<Chemical>().ToTable("Chemical");
+            //modelBuilder.Entity<Biological>().ToTable("Biological");
         }
+
+
+
+
     }
 }

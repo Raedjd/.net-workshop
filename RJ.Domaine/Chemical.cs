@@ -8,9 +8,9 @@ namespace RJ.Domaine
 {
    public  class Chemical:Product
     {
-        public string City { get; set; }
+        
         public string LabName { get; set; }
-        public string StreetAddress { get; set; }
+        public Adresse Adresse { get; set; }
 
         public override void GetMyType()
         {
